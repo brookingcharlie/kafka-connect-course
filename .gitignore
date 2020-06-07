@@ -1,1 +1,6 @@
 /data/
+
+.idea/
+*.iml
+
+*.swp
