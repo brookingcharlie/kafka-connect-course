@@ -71,7 +71,8 @@ $ curl http://localhost:8083/connectors/file-stream-demo-distributed/status | jq
 }
 ```
 
-We can see the output record using a console consumer:
+We can see the output record using a console consumer.
+Since we've enabled converter schemas, we see the payload as a nested property alongside its schema.
 
 ```
 $ docker run --rm -it --net=host landoop/fast-data-dev:2.5.0 \
