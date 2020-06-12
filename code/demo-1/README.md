@@ -1,6 +1,6 @@
 # Demo 1: File source in standalone mode
 
-Our goal: use Kafka Connect in standalone mode to read a file into Kafka.
+Goal: use Kafka Connect in standalone mode to read a file into Kafka.
 
 In this directory, we have config files - `worker.properties` and `connector.properties` - for
 running a standalone connector. See the comments in those files explaining each setting.
