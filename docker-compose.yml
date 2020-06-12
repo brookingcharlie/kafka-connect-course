@@ -1,7 +1,7 @@
 version: '2.2'
 services:
   kafka-cluster:
-    image: landoop/fast-data-dev:2.3
+    image: landoop/fast-data-dev:2.5.0
     container_name: kafka-cluster
     environment:
       ADV_HOST: 127.0.0.1
