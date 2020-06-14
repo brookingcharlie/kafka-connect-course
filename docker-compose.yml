@@ -15,7 +15,7 @@ services:
     volumes:
       - ./data/kafka-cluster:/data
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.6.2
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.7.1
     container_name: elasticsearch
     ports:
       - 9200:9200
@@ -24,6 +24,14 @@ services:
       discovery.type: single-node
     volumes:
       - ./data/elasticsearch:/usr/share/elasticsearch/data
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.7.1
+    container_name: kibana
+    ports:
+      - 5601:5601
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
   postgres:
     image: postgres:13
     container_name: postgres
