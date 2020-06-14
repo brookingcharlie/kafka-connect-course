@@ -14,7 +14,7 @@
     "insert.mode": "upsert",
     "pk.mode": "kafka",
     "pk.fields": "__connect_topic,__connect_partition,__connect_offset",
-    "fields.whitelist": "id,created_at,lang,is_retweet",
+    "fields.whitelist": "id,created_at,text,lang,is_retweet",
     "auto.create": "true",
     "auto.evolve": "true"
   }
