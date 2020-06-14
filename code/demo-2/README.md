@@ -2,6 +2,12 @@
 
 Goal: stream a file into Kafka using a distributed cluster.
 
+For this demo, you need to run the Kafka Cluster:
+
+```
+docker-compose -f ../../docker-compose.yml up -d kafka-cluster
+```
+
 We don't have worker config in this case. We'll be using the distributed cluster already running in our `landoop/fast-data-dev` container.
 
 Check out the connector config, `connector.properties`, to see how it's configured.

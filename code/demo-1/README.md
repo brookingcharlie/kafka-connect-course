@@ -2,6 +2,12 @@
 
 Goal: use Kafka Connect in standalone mode to read a file into Kafka.
 
+For this demo, you need to run the Kafka Cluster:
+
+```
+docker-compose -f ../../docker-compose.yml up -d kafka-cluster
+```
+
 In this directory, we have config files - `worker.properties` and `connector.properties` - for
 running a standalone connector. See the comments in those files explaining each setting.
 

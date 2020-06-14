@@ -2,6 +2,12 @@
 
 Goal: gather data from Twitter in Kafka Connect distributed mode.
 
+For this demo, you need to run the Kafka Cluster:
+
+```
+docker-compose -f ../../docker-compose.yml up -d kafka-cluster
+```
+
 This exercise relies on having a Twitter developer account and setting-up an application.
 
 Copy `connector-TEMPLATE.json` to create `connector.json` and replace these lines:

@@ -1,15 +1,13 @@
 # Notes on Kafka Connect course
 
-## Running the Kafka Cluster using Docker
+Docker Compose environment for runnning:
 
-Runs Zookeeper, Kafka, Kafka Connect, REST Proxy, Schema Registry, and Landoop UI:
+* Landoop Kafka Distribution (Zookeeper, Kafka, Kafka Connect, REST Proxy, Schema Registry, and Landoop UI)
+* ElasticSearch
+* PostgreSQL
 
-    docker-compose up kafka-cluster
+Demo files for:
 
-## Running ElasticSearch using Docker
-
-    docker-compose up elasticsearch
-
-## Running PostgreSQL using Docker
-
-    docker-compose up postgres
+* [Demo 1: File source in standalone mode](code/demo-1)
+* [Demo 2: File source in distributed mode](code/demo-2)
+* [Demo 3: Twitter source in distributed mode](code/demo-3)
